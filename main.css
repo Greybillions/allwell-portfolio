@@ -37,8 +37,8 @@ li {
   --sideBGColor: #040b14;
   --themeColor: hsla(269, 55%, 48%, 0.785);
   --iconBGColor: #2c2f3f;
-  --textColor: #353535;
-  --bgColor: #f7f7f7;
+  --textColor: #f7f7f7;
+  --bgColor: #040b14;
 }
 
 html {
@@ -226,7 +226,7 @@ main {
 }
 
 .sub-heading {
-  color: #000;
+  color: var(--textColor);
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -303,7 +303,7 @@ main {
 /* Facts Section */
 #fact {
   padding: 50px 30px;
-  background: white;
+  background: var(--bgColor);
 }
 
 #fact .fact-row {
@@ -321,7 +321,7 @@ main {
   font-size: 30px;
   margin-left: 5px;
   font-weight: 600;
-  color: var(--sideBGColor);
+  color: var(--textColor);
 }
 #fact .fact-row .fact-box p {
   color: var(--textColor);
@@ -332,7 +332,7 @@ main {
 /* Service Section */
 #service {
   padding: 70px 30px;
-  background: white;
+  background: var(--bgColor);
 }
 
 #service .service-row {
@@ -355,7 +355,7 @@ main {
   font-size: 22px;
   line-height: 46px;
   background: var(--themeColor);
-  color: var(--bgColor);
+  color: var(--textColor);
   transition: 0.7s;
   text-align: center;
 }
@@ -366,7 +366,7 @@ main {
 }
 
 #service .service-row .service-box .service-info h4 {
-  color: var(--sideBGColor);
+  color: var(--themeColor);
   font-size: 20px;
   font-weight: 600;
 }
@@ -433,7 +433,8 @@ main {
 /* Contact Section */
 #contact {
   padding: 70px 30px;
-  background: white;
+  background: var(--bgColor);
+  color: var(--textColor);
 }
 
 #contact .contact-row {
@@ -446,7 +447,7 @@ main {
 #contact .contact-row .contact-left {
   flex-basis: 40%;
   min-width: 40%;
-  background: white;
+  background: var(--iconBGColor);
   box-shadow: 0 0 10px rgba(0, 0, 0, 20%);
   border-radius: 4px;
   padding: 30px;
@@ -478,13 +479,13 @@ main {
 
 #contact .contact-row .contact-left .icon-box .info h4 {
   font-size: 20px;
-  color: var(--sideBGColor);
+  color: var(--textColor);
   font-weight: 600;
 }
 
-#contact .contact-row .contact-left .icon-box .info + p {
+#contact .contact-row .contact-left .icon-box .info p {
   font-size: 15px;
-  color: var(--textColor);
+  color: var(--themeColor);
   font-weight: 500;
 }
 
@@ -496,7 +497,7 @@ main {
 #contact .contact-row .contact-right {
   flex-basis: 60%;
   min-width: 60%;
-  background: white;
+  background: var(--iconBGColor);
   box-shadow: 0 0 10px rgba(0, 0, 0, 20%);
   border-radius: 4px;
   padding: 30px;
@@ -615,7 +616,6 @@ main {
 
   #contact {
     padding: 40px 15px 15px 15px;
-    background: white;
   }
 
   #contact .contact-row .contact-right form input,
