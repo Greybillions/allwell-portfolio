@@ -488,6 +488,11 @@ main {
   font-weight: 500;
 }
 
+#contact .contact-row .contact-left .icon-box .info p a {
+  color: var(--themeColor);
+  font-weight: 500;
+}
+
 #contact .contact-row .contact-right {
   flex-basis: 60%;
   min-width: 60%;
