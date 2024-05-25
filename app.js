@@ -8,7 +8,7 @@ menuBtn.addEventListener('click', (e) => {
 
 // Typing Effect
 const typed = new Typed('.auto-input', {
-  strings: ['a Digital Artist!', 'an NFTs Artist!', 'a Designer!'],
+  strings: ['a Digital Artist!', 'an NFTs Visionary!', 'a Creator!'],
   typeSpeed: 50,
   backSpeed: 50,
   backDelay: 2000,
