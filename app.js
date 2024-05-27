@@ -55,4 +55,10 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  // Autoplay
+  autoplay: {
+    delay: 10000, // 20000ms = 20 seconds
+    disableOnInteraction: false, // Optional: keeps autoplay running even after user interactions
+  },
 });

@@ -239,7 +239,7 @@ main {
 }
 
 .seemore.projects {
-  padding-top: 10px;
+  padding: 10px;
 }
 
 #seemore h2 {
@@ -467,9 +467,8 @@ main {
   max-width: 987px;
   width: 100%;
   background-color: var(--bgColor);
-
   border-radius: 8px;
-  padding: 4em 0;
+  padding: 4em 20px;
 }
 
 .swiper {
@@ -487,7 +486,6 @@ main {
 .swiper .swiper-slide .comments {
   background-color: var(--iconBGColor);
   padding: 1.5em 2em;
-  width: 50%;
   border-radius: 5px;
   font-size: 0.9em;
   position: relative;
@@ -539,12 +537,14 @@ main {
 }
 
 .stars {
-  display: flex;
-  padding: 20px 0;
+  display: inline-flex;
+  padding: 10px 5px;
   margin: 10px 0;
   text-align: center;
   align-items: center;
   justify-content: center;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 20%);
 }
 
 .stars i {
@@ -572,6 +572,10 @@ main {
 .btn:hover i {
   margin-left: 20px;
   transition: 0.3s;
+}
+
+.comments p {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 320px) {
@@ -677,7 +681,7 @@ main {
 #contact .contact-row .contact-right form button {
   font-size: 15px;
   font-weight: 500;
-  color: var(--textColor);
+  color: var(--bgColor);
   width: 100%;
   display: block;
   margin: 25px 0;
@@ -791,5 +795,22 @@ main {
   #contact .contact-row .contact-right form textarea,
   #contact .contact-row .contact-right form button {
     margin: 18px 0;
+  }
+
+  .divider.new {
+    background: var(--sideBGColor);
+    width: 90%;
+  }
+
+  .sub-heading.new {
+    padding-left: 15px;
+  }
+
+  .swiper .profile img {
+    border: 7px solid var(--textColor);
+  }
+
+  .board {
+    background-color: var(--themeColor);
   }
 }
